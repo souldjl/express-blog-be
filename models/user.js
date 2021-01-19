@@ -1,10 +1,3 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-28 22:54:14
- * @LastEditTime: 2020-12-30 14:36:50
- * @Description: 
- * @FilePath: /express-blog-be/models/user.js
- */
 const { mongoose } = require('../core/mongodb.js');
 const autoIncrement = require('mongoose-auto-increment-fix');
 

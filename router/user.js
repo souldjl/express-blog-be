@@ -1,10 +1,3 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-28 22:54:07
- * @LastEditTime: 2020-12-30 11:48:01
- * @Description: 
- * @FilePath: /express-blog-be/router/user.js
- */
 const User = require('../models/user');
 import { MD5_SUFFIX, responseClient, md5 } from '../util/util.js';
 
@@ -38,7 +31,7 @@ exports.login = (req, res) => {
         });
 };
 
-// 登录
+// 退出登录
 exports.logout = (req, res) => {
     const { userInfo } = req.session;
     if (userInfo) {

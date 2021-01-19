@@ -1,8 +1,15 @@
+/*
+ * @Author: daijiulong@baidu.com
+ * @Date: 2020-12-30 14:57:04
+ * @LastEditTime: 2021-01-18 15:17:42
+ * @Description: 
+ * @FilePath: /express-blog-be/router/article.js
+ */
 import { responseClient } from '../util/util';
 const Article = require('../models/article');
 
 exports.addArticle = (req, res) => {
-    const { title, keyword, author, desc, content, numbers, img_url, state } = req.body;
+    let { title, keyword, author, desc, content, numbers, img_url, state } = req.body;
     let arctile = new Article({title, keyword, author, desc, content, numbers, img_url, state });
     arctile.save().then((result) => {
         responseClient(res, 200, 0, '操作成功', result) 
