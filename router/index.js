@@ -1,10 +1,4 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-28 22:35:00
- * @LastEditTime: 2021-01-19 17:14:06
- * @Description: 
- * @FilePath: /express-blog-be/router/index.js
- */
+
 const router = require('express').Router();
 const User = require('./user');
 const Article = require('./article');

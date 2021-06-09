@@ -9,7 +9,7 @@ mongoose.set('useFindAndModify', false)
 // mongoose Promise
 mongoose.Promise = global.Promise
 exports.connect = () => {
-    mongoose.createConnection(CONFIG.MONGODB.uri, {
+    mongoose.connect(CONFIG.MONGODB.uri, {
         useCreateIndex: true,
         useNewUrlParser: true,
         promiseLibrary: global.Promise

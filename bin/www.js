@@ -1,11 +1,3 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-28 22:30:30
- * @LastEditTime: 2020-12-29 18:58:34
- * @Description: 
- * @FilePath: /express-blog-be/bin/www.js
- */
-
 const app = require('../app');
 const http = require('http');
 

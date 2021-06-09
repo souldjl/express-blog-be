@@ -1,7 +1,7 @@
 /*
  * @Author: daijiulong@baidu.com
  * @Date: 2021-01-18 14:40:01
- * @LastEditTime: 2021-01-19 16:41:30
+ * @LastEditTime: 2021-01-19 17:36:13
  * @Description: 
  * @FilePath: /express-blog-be/router/tag.js
  */
@@ -37,14 +37,10 @@ exports.getTagList = (req, res) => {
 // 增加标签
 exports.addTag = (req, res) => {
     let { name, desc } = req.body;
-    console.log(name, desc)
     Tag.findOne({name: name}, (err, result) => {
-        console.log(name, desc, err)
         if(!result) {
-            console.log(name, desc)
             const newtag = new Tag({name, desc});
             newtag.save((err, result) => {
-                console.log(err, result)
                 if(err) {
                     responseClient(res, 500, 3, '服务端异常') 
                 }else{
