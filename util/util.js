@@ -1,17 +1,3 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-29 17:26:30
- * @LastEditTime: 2021-01-18 15:05:47
- * @Description: 
- * @FilePath: /express-blog-be/util/util.js
- */
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-29 17:26:30
- * @LastEditTime: 2020-12-29 21:04:18
- * @Description: 
- * @FilePath: /express-blog-be/util/util.js
- */
 import crypto from 'crypto';
 
 module.exports = {

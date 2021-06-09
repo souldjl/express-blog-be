@@ -1,10 +1,3 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2020-12-30 14:57:04
- * @LastEditTime: 2021-01-18 15:17:42
- * @Description: 
- * @FilePath: /express-blog-be/router/article.js
- */
 import { responseClient } from '../util/util';
 const Article = require('../models/article');
 

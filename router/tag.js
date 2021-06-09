@@ -1,10 +1,3 @@
-/*
- * @Author: daijiulong@baidu.com
- * @Date: 2021-01-18 14:40:01
- * @LastEditTime: 2021-01-19 17:36:13
- * @Description: 
- * @FilePath: /express-blog-be/router/tag.js
- */
 const Tag = require('../models/tag');
 import { responseClient } from '../util/util.js';
 
